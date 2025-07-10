@@ -466,7 +466,7 @@ useEffect(() => {
       </div>
 
       {/* Love Story */}
-      <div style={divStyle1} className='p-10 flex flex-col w-full overflow-x-hidden items-center justify-start min-h-screen lg:px-[300px]'>
+      <div style={divStyle1} className='p-10 flex flex-col w-full overflow-hidden items-center justify-start lg:px-[300px]'>
             <p data-aos="fade-down" data-aos-duration='3000'
             className='mt-2 text-[35px] caveat text-[#453327] text-shadow-amber-900/10 text-shadow-lg'>Love Story</p>
             <img data-aos="fade-right" data-aos-duration='3000'
@@ -498,12 +498,12 @@ useEffect(() => {
         </div>
         <div className='bg-white/30  flex flex-col lg:flex-row lg:w-2/3 -mt-20 items-center m-10 rounded-4xl border-[#B19740] border-2 p-4 text-right'>
          
-          <div className='mt-10 lg:mt-0 lg:mx-10 text-[#453327]'>
+          <div className='mt-10 lg:mt-0 lg:mx-10 '>
             <img data-aos="flip-right" data-aos-duration='1000' src={jago} alt="" />
             <div className='flex flex-row-reverse justify-between'>
               <div>
-                <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold'>{accountNumber}</p>
-                <p data-aos="fade-right" data-aos-duration='1000'>A.n Ajeng Ayu P</p>
+                <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold text-[#453327]'>{accountNumber}</p>
+                <p data-aos="fade-right" data-aos-duration='1000' className='text-[#453327]'>A.n Ajeng Ayu P</p>
               </div>
               <button data-aos="fade-left" data-aos-duration='1000' className='shadow-2xs shadow-amber-800'
               onClick={handleCopy}
@@ -515,8 +515,8 @@ useEffect(() => {
             <img data-aos="flip-right" data-aos-duration='1000' src={jago} alt="" />
             <div className='flex flex-row-reverse justify-between'>
               <div>
-                <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold'>{accountNumber1}</p>
-                <p data-aos="fade-right" data-aos-duration='1000'>A.n Heri Sukoco</p>
+                <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold text-[#453327]'>{accountNumber1}</p>
+                <p data-aos="fade-right" data-aos-duration='1000' className='text-[#453327]'>A.n Heri Sukoco</p>
               </div>
               <button data-aos="fade-left" data-aos-duration='1000' className='shadow-2xs shadow-amber-800'
               onClick={handleCopy1}
