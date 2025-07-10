@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bonheur+Royale&family=Caveat:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bonheur {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.bodoni {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.caveat{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  scroll-behavior: smooth;
+}
+@keyframes goyangKananKiri {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+@keyframes goyangRotate {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-3deg); }
+  30% { transform: rotate(3deg); }
+  45% { transform: rotate(-2deg); }
+  60% { transform: rotate(2deg); }
+  75% { transform: rotate(-1deg); }
+  90% { transform: rotate(1deg); }
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+.zoominout {
+  animation: zoomInOut 4s ease-in-out infinite;
+}
+
+
+.wiggle {
+  animation: wiggle 8s ease-in-out infinite;
+}
+
+.wiggle1 {
+  animation: wiggle 8.5s ease-in-out infinite;
+}
+.goyang-rotate {
+  animation: goyangRotate 8s ease-in-out infinite;
+}
+.goyang-rotate1 {
+  animation: goyangRotate 7s ease-in-out infinite;
+}
+.goyang {
+  animation: goyangKananKiri 11s ease-in-out infinite;
+}
+.goyang1 {
+  animation: goyangKananKiri 10s ease-in-out infinite;
+}
+
+@import "tailwindcss";
