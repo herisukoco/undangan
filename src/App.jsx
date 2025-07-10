@@ -177,35 +177,34 @@ useEffect(() => {
 )}
       <div id='body' className='hidden'></div>
       {/* Body */}
-      <div className=' w-full overflow-x-hidden min-h-screen h-auto flex flex-col items-center justify-start'>
-      <div
-  onClick={toggleMusic}
-  className="fixed bottom-4 z-3 right-4 w-14 h-14 rounded-full bg-white/50 shadow-2xl flex items-center justify-center cursor-pointer "
->
-  {isPlaying ? (
-    // Ikon Pause
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-black/50"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M10 9v6m4-6v6" />
-    </svg>
-  ) : (
-    // Ikon Play
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-4 text-black/50"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-    >
-      <path d="M5 3v18l15-9L5 3z" />
-    </svg>
-  )}
-</div>
+      <div className='w-full overflow-x-hidden min-h-screen h-auto flex flex-col items-center justify-start'>
+        <div onClick={toggleMusic}
+          className="fixed bottom-4 z-3 right-4 w-14 h-14 rounded-full bg-white/50 shadow-2xl flex items-center justify-center cursor-pointer "
+        >
+          {isPlaying ? (
+            // Ikon Pause
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-black/50"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 9v6m4-6v6" />
+            </svg>
+          ) : (
+            // Ikon Play
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-4 text-black/50"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M5 3v18l15-9L5 3z" />
+            </svg>
+          )}
+        </div>
 
         {/* hal 1 */}
         <div style={divstyle2} className='flex overflow-hidden relative flex-col w-full h-screen items-center justify-center text-center'
