@@ -498,7 +498,7 @@ useEffect(() => {
         </div>
         <div className='bg-white/30  flex flex-col lg:flex-row lg:w-2/3 -mt-20 items-center m-10 rounded-4xl border-[#B19740] border-2 p-4 text-right'>
          
-          <div className='mt-10 lg:mt-0 lg:mx-10'>
+          <div className='mt-10 lg:mt-0 lg:mx-10 text-[#453327]'>
             <img data-aos="flip-right" data-aos-duration='1000' src={jago} alt="" />
             <div className='flex flex-row-reverse justify-between'>
               <div>
