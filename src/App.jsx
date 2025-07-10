@@ -177,7 +177,7 @@ useEffect(() => {
 )}
       <div id='body' className='hidden'></div>
       {/* Body */}
-      <div className='w-full overflow-x-hidden min-h-screen h-auto flex flex-col items-center justify-start'>
+      <div className='w-full relative overflow-x-hidden min-h-screen h-auto flex flex-col items-center justify-start'>
         <div onClick={toggleMusic}
           className="fixed overflow-x-hidden bottom-4 z-3 left-4 w-14 h-14 rounded-full bg-white/50 shadow-2xl flex items-center justify-center cursor-pointer "
         >
