@@ -408,9 +408,9 @@ useEffect(() => {
           src={bunga3} alt="" className='zoominout -translate-y-[200px] lg:-translate-y-[150px] left-10 lg:left-0 absolute lg:relative'/>
           <div className='text-center m-10'> 
             <p data-aos="fade-up" data-aos-duration="1000"
-            className='bodoni lg:text-2xl'>Mencintaimu merupakan pilihan terbaik yang pernah aku buat selama hidupku.</p>
+            className='bodoni lg:text-2xl text-[#453327]'>Mencintaimu merupakan pilihan terbaik yang pernah aku buat selama hidupku.</p>
             <p data-aos="fade-down" data-aos-duration="1000"
-            className='bonheur mt-6 lg:mt-10 lg:text-3xl text-[30px]'>Ajeng & Heri</p>
+            className='bonheur mt-6 lg:mt-10 lg:text-3xl text-[30px] text-[#453327]'>Ajeng & Heri</p>
           </div>
 
         </div>
