@@ -179,7 +179,7 @@ useEffect(() => {
       {/* Body */}
       <div className='w-full overflow-x-hidden min-h-screen h-auto flex flex-col items-center justify-start'>
         <div onClick={toggleMusic}
-          className="fixed bottom-4 z-3 left-4 w-14 h-14 rounded-full bg-white/50 shadow-2xl flex items-center justify-center cursor-pointer "
+          className="fixed overflow-x-hidden bottom-4 z-3 left-4 w-14 h-14 rounded-full bg-white/50 shadow-2xl flex items-center justify-center cursor-pointer "
         >
           {isPlaying ? (
             // Ikon Pause
@@ -232,7 +232,7 @@ useEffect(() => {
         </div>
 
         {/* hal 2 */}
-        <div style={divStyle1} className='flex flex-col relative py-20 items-center justify-center text-center '>
+        <div style={divStyle1} className='overflow-x-hidden flex flex-col relative py-20 items-center justify-center text-center '>
           
           <p className='p-10 bodoni text-[#453327] text-[16px] lg:py-[100px] lg:px-[300px]'
             data-aos="fade-up"
@@ -277,7 +277,7 @@ useEffect(() => {
           </div>
 
           {/* Bridge section */}
-          <div className='flex flex-col lg:flex-row'>
+          <div className='flex flex-col lg:flex-row overflow-x-hidden'>
             <div className='flex flex-row lg:justify-center lg:ml-[300px]'>
               <img src={bridge} alt="" className='w-[50%] object-cover lg:w-[200px] lg:h-[300px] relative ml-10 rounded-3xl'
                data-aos='fade-down-right'
@@ -301,7 +301,7 @@ useEffect(() => {
           </div>
 
           {/* Groom */}
-          <div className='flex flex-col lg:flex-row-reverse mb-[30px]'>
+          <div className='flex flex-col lg:flex-row-reverse mb-[30px] overflow-x-hidden'>
             <div className='flex flex-row mt-30 items-end justify-end lg:justify-center lg:mr-[300px]'>
               <img src={bunga2} alt="" className='goyang-rotate relative lg:w-[200px] h-[300px] translate-x-20 z-1 translate-y-20 -rotate-4' />
               <img src={groom} alt="" className='w-[50%] object-cover lg:w-[200px] lg:h-[300px] relative mr-10 rounded-3xl'
@@ -327,7 +327,7 @@ useEffect(() => {
       </div>
 
       {/* Tanggal dan Countdown */}
-      <div className='bg-[#FCF6E6] w-full min-h-screen flex flex-col'>
+      <div className='bg-[#FCF6E6] w-full min-h-screen flex flex-col overflow-x-hidden'>
         <div className='flex flex-row justify-between w-full items-center'>
           <img src={daun} alt="" className='wiggle w-[50%] object-cover lg:w-[200px]  left-0'/>
           <div className='flex flex-col items-center justify-center'>
@@ -349,7 +349,7 @@ useEffect(() => {
       </div>
 
       {/* Detail Acara*/}
-      <div className='bg-[#FCF6E6]  w-full min-h-screen flex flex-col px-10 items-center justify-center'>
+      <div className='bg-[#FCF6E6] overflow-x-hidden  w-full min-h-screen flex flex-col px-10 items-center justify-center'>
         <div data-aos="zoom-in" data-aos-duration="500" style={divStyle1} className='bg-[#FCF6E6] border-[#B19740] border-4 rounded-full lg:w-[60%] min-h-screen flex flex-col items-center justify-start'>
         <img data-aos="fade-left" data-aos-duration="1000"
         src={daun1} alt=""  className=' wiggle lg:w-[500px] -translate-y-[30%]'/>
@@ -392,13 +392,13 @@ useEffect(() => {
 
 
       {/* tangan */}
-      <div className='flex flex-row w-full bg-[#FCF6E6]'>
+      <div className='flex flex-row w-full bg-[#FCF6E6] overflow-x-hidden'>
         <img data-aos="fade-right" data-aos-duration="1000" src={tangankiri} alt="" className='w-1/2' />
         <img data-aos="fade-left" data-aos-duration="1000" src={tangankanan} alt="" className='w-1/2'/>
       </div>
 
       {/* Quotes */}
-      <div className='p-10 w-full  -mb-10 bg-[#FCF6E6] flex flex-col lg:flex-row'>
+      <div className='p-10 w-full  -mb-10 bg-[#FCF6E6] flex flex-col lg:flex-row overflow-x-hidden'>
         <div data-aos="zoom-out" data-aos-duration="1000"
         className=' flex flex-col items-center justify-center lg:w-1/2'>
           <img src={bg2} alt="" className='w-full rounded-xl object-cover ' />
@@ -417,7 +417,7 @@ useEffect(() => {
       </div>
 
       {/* Galeri */}
-      <div style={divStyle1} className='w-full pb-[100px] min-h-screen flex flex-col items-center justify-start px-10'>
+      <div style={divStyle1} className='w-full overflow-x-hidden pb-[100px] min-h-screen flex flex-col items-center justify-start px-10'>
         <img data-aos="flip-right" data-aos-duration='3000' 
         src={line2} alt="" className=''/>
         <p data-aos="fade-down" data-aos-duration="1000"
@@ -466,7 +466,7 @@ useEffect(() => {
       </div>
 
       {/* Love Story */}
-      <div style={divStyle1} className='p-10 flex flex-col w-full items-center justify-start min-h-screen lg:px-[300px]'>
+      <div style={divStyle1} className='p-10 flex flex-col w-full overflow-x-hidden items-center justify-start min-h-screen lg:px-[300px]'>
             <p data-aos="fade-down" data-aos-duration='3000'
             className='mt-2 text-[35px] caveat text-[#453327] text-shadow-amber-900/10 text-shadow-lg'>Love Story</p>
             <img data-aos="fade-right" data-aos-duration='3000'
@@ -490,7 +490,7 @@ useEffect(() => {
       </div>
 
       {/* Wedding Gift */}
-      <div className='flex flex-col w-full min-h-screen bg-[#FCF6E6] items-center'>
+      <div className='flex flex-col w-full overflow-x-hidden min-h-screen bg-[#FCF6E6] items-center'>
         <div className='flex flex-row items-center justify-center'>
           <img src={bunga1} alt="" className='goyang-rotate rotate-[25deg] -translate-x-[30%] ' />
           <p data-aos="fade-up" data-aos-duration='1000'
@@ -527,7 +527,7 @@ useEffect(() => {
       </div>
 
       {/* Halaman penutup */}
-      <div className='w-full relative overflow-hidden min-h-screen  flex flex-col items-center text-center justify-center'>
+      <div className='w-full overflow-x-hidden relative overflow-hidden min-h-screen  flex flex-col items-center text-center justify-center'>
         <img data-aos="zoom-in" data-aos-duration='1000' src={bg3} alt="" className='w-full absolute top-0 lg:w-1/2 h-screen object-cover'/>
         <div data-aos="zoom-in" data-aos-duration='1300' className=' absolute items-center justify-center min-h-screen  w-full z-2  flex flex-col bg-transparent text-white p-10 bg-gradient-to-b from-white/5 to-black/80'>
           <p data-aos="zoom-in" data-aos-duration='1500' className='mb-16 mt-[300px]'>Atas kehadiran dan doa restunya, 
