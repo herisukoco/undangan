@@ -277,7 +277,7 @@ useEffect(() => {
           </div>
 
           {/* Bridge section */}
-          <div className='flex flex-col lg:flex-row overflow-x-hidden'>
+          <div className='flex flex-col lg:flex-row overflow-x-hidden w-full'>
             <div className='flex flex-row lg:justify-center lg:ml-[300px]'>
               <img src={bridge} alt="" className='w-[50%] object-cover lg:w-[200px] lg:h-[300px] relative ml-10 rounded-3xl'
                data-aos='fade-down-right'
@@ -301,7 +301,7 @@ useEffect(() => {
           </div>
 
           {/* Groom */}
-          <div className='flex flex-col lg:flex-row-reverse mb-[30px] overflow-x-hidden'>
+          <div className='flex flex-col lg:flex-row-reverse mb-[30px] overflow-x-hidden text-[#453327]'>
             <div className='flex flex-row mt-30 items-end justify-end lg:justify-center lg:mr-[300px]'>
               <img src={bunga2} alt="" className='goyang-rotate relative lg:w-[200px] h-[300px] translate-x-20 z-1 translate-y-20 -rotate-4' />
               <img src={groom} alt="" className='w-[50%] object-cover lg:w-[200px] lg:h-[300px] relative mr-10 rounded-3xl'
@@ -349,7 +349,7 @@ useEffect(() => {
       </div>
 
       {/* Detail Acara*/}
-      <div className='bg-[#FCF6E6] overflow-x-hidden  w-full min-h-screen flex flex-col px-10 items-center justify-center'>
+      <div className='bg-[#FCF6E6] overflow-x-hidden text-[#453327]  w-full min-h-screen flex flex-col px-10 items-center justify-center'>
         <div data-aos="zoom-in" data-aos-duration="500" style={divStyle1} className='bg-[#FCF6E6] border-[#B19740] border-4 rounded-full lg:w-[60%] min-h-screen flex flex-col items-center justify-start'>
         <img data-aos="fade-left" data-aos-duration="1000"
         src={daun1} alt=""  className=' wiggle lg:w-[500px] -translate-y-[30%]'/>
