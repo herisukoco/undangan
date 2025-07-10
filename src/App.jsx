@@ -143,7 +143,7 @@ useEffect(() => {
 
     {locked && !opened && (
       <div style={divStyle1}
-        className="flex z-5 flex-col justify-start lg:pt-[50px] pt-[55px] items-center overflow-hidden min-h-screen w-full text-center ">
+        className="flex z-5 flex-col justify-start lg:pt-[50px] pt-[55px] items-center overflow-hidden h-screen w-full text-center ">
          
         <p className='text-[#453327]'
           data-aos="fade-up" 
@@ -156,7 +156,7 @@ useEffect(() => {
         <p className='bonheur text-[#453327] text-[60px] mt-[30px]'
           data-aos="fade-down" 
           data-aos-duration="2000">
-          Heri & Ajeng
+          Ajeng & Heri
         </p>
         <div className='flex flex-col'>
           <img data-aos="zoom-in" data-aos-duration="1000" src={cover} alt="cover" className='lg:w-[400px]'/>
@@ -217,7 +217,7 @@ useEffect(() => {
             </p>
             <p className='bonheur text-[#fff] text-[60px] mt-[30px] goyang1'
             data-aos='zoom-out' data-aos-duration='2500'>
-              Heri & Ajeng
+              Ajeng & Heri
             </p>
             <img 
             src={line} alt="" className='lg:w-[300px]'
@@ -232,7 +232,7 @@ useEffect(() => {
         </div>
 
         {/* hal 2 */}
-        <div style={divStyle1} className='overflow-x-hidden flex flex-col relative py-20 items-center justify-center text-center '>
+        <div style={divStyle1} className='overflow-hidden flex flex-col relative py-20 items-center justify-center text-center '>
           
           <p className='p-10 bodoni text-[#453327] text-[16px] lg:py-[100px] lg:px-[300px]'
             data-aos="fade-up"
@@ -245,7 +245,7 @@ useEffect(() => {
             data-aos-duration="1500"
           >Q.S Ar-Rum : 21</p>
           <div className='flex flex-row relative w-full text-center justify-center items-center'>
-            <p className='bodoni text-3xl mb-1 mt-10 lg:text-5xl'
+            <p className='bodoni text-3xl mb-1 mt-10 lg:text-5xl  text-[#453327]'
              data-aos="zoom-out"
             data-aos-easing="linear"
             data-aos-duration="2000">
@@ -277,7 +277,7 @@ useEffect(() => {
           </div>
 
           {/* Bridge section */}
-          <div className='flex flex-col lg:flex-row overflow-x-hidden w-full'>
+          <div className='flex flex-col h-full lg:flex-row overflow-hidden w-full'>
             <div className='flex flex-row lg:justify-center lg:ml-[300px]'>
               <img src={bridge} alt="" className='w-[50%] object-cover lg:w-[200px] lg:h-[300px] relative ml-10 rounded-3xl'
                data-aos='fade-down-right'
@@ -327,7 +327,7 @@ useEffect(() => {
       </div>
 
       {/* Tanggal dan Countdown */}
-      <div className='bg-[#FCF6E6] w-full min-h-screen flex flex-col overflow-x-hidden'>
+      <div className='bg-[#FCF6E6] w-full flex flex-col overflow-hidden'>
         <div className='flex flex-row justify-between w-full items-center'>
           <img src={daun} alt="" className='wiggle w-[50%] object-cover lg:w-[200px]  left-0'/>
           <div className='flex flex-col items-center justify-center'>
@@ -349,7 +349,7 @@ useEffect(() => {
       </div>
 
       {/* Detail Acara*/}
-      <div className='bg-[#FCF6E6] overflow-x-hidden text-[#453327]  w-full min-h-screen flex flex-col px-10 items-center justify-center'>
+      <div className='bg-[#FCF6E6] overflow-hidden text-[#453327]  w-full min-h-screen flex flex-col px-10 items-center justify-center'>
         <div data-aos="zoom-in" data-aos-duration="500" style={divStyle1} className='bg-[#FCF6E6] border-[#B19740] border-4 rounded-full lg:w-[60%] min-h-screen flex flex-col items-center justify-start'>
         <img data-aos="fade-left" data-aos-duration="1000"
         src={daun1} alt=""  className=' wiggle lg:w-[500px] -translate-y-[30%]'/>
@@ -505,7 +505,7 @@ useEffect(() => {
                 <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold text-[#453327]'>{accountNumber}</p>
                 <p data-aos="fade-right" data-aos-duration='1000' className='text-[#453327]'>A.n Ajeng Ayu P</p>
               </div>
-              <button data-aos="fade-left" data-aos-duration='1000' className='shadow-2xs shadow-amber-800'
+              <button data-aos="fade-left" data-aos-duration='1000' className='bg-[#A3997D] shadow-2xs shadow-amber-800'
               onClick={handleCopy}
               >{copied ? "Copied" : "Copy"}</button>
             </div>
@@ -518,7 +518,7 @@ useEffect(() => {
                 <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold text-[#453327]'>{accountNumber1}</p>
                 <p data-aos="fade-right" data-aos-duration='1000' className='text-[#453327]'>A.n Heri Sukoco</p>
               </div>
-              <button data-aos="fade-left" data-aos-duration='1000' className='shadow-2xs shadow-amber-800'
+              <button data-aos="fade-left" data-aos-duration='1000' className='bg-[#A3997D] shadow-2xs shadow-amber-800'
               onClick={handleCopy1}
               >{copied1 ? "Copied" : "Copy"}</button>
             </div>
@@ -535,7 +535,7 @@ useEffect(() => {
 
             <img data-aos="flip-right" data-aos-duration='2000' src={line} alt="" />
             <p data-aos="fade-up" data-aos-duration='2000' className='bonheur  text-[60px] mt-[30px]'>
-          Heri & Ajeng
+          Ajeng & Heri
         </p>
         </div>
         <p className='z-3 absolute bottom-4 text-white/50 text-[8px]'><br />Designed by : Ajeng <br /> Code by : Heri</p>
