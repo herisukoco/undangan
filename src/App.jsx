@@ -62,6 +62,7 @@ function App() {
 
 // Lagu
   const [opened, setOpened] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
@@ -301,7 +302,7 @@ useEffect(() => {
           </div>
 
           {/* Groom */}
-          <div className='flex flex-col lg:flex-row-reverse mb-[30px] overflow-x-hidden text-[#453327]'>
+          <div className='flex flex-col lg:flex-row-reverse mb-[30px] overflow-hidden text-[#453327]'>
             <div className='flex flex-row mt-30 items-end justify-end lg:justify-center lg:mr-[300px]'>
               <img src={bunga2} alt="" className='goyang-rotate relative lg:w-[200px] h-[300px] translate-x-20 z-1 translate-y-20 -rotate-4' />
               <img src={groom} alt="" className='w-[50%] object-cover lg:w-[200px] lg:h-[300px] relative mr-10 rounded-3xl'
@@ -490,39 +491,150 @@ useEffect(() => {
       </div>
 
       {/* Wedding Gift */}
-      <div className='flex flex-col w-full overflow-x-hidden min-h-screen bg-[#FCF6E6] items-center'>
+      <div className='flex flex-col w-full overflow-x-hidden bg-[#FCF6E6] items-center lg:px-[300px]'>
         <div className='flex flex-row items-center justify-center'>
           <img src={bunga1} alt="" className='goyang-rotate rotate-[25deg] -translate-x-[30%] ' />
           <p data-aos="fade-up" data-aos-duration='1000'
            className='caveat text-[30px] -translate-x-[30%] text-[#453327]'>Wedding Gift</p>
         </div>
-        <div className='bg-white/30  flex flex-col lg:flex-row lg:w-2/3 -mt-20 items-center m-10 rounded-4xl border-[#B19740] border-2 p-4 text-right'>
-         
-          <div className='mt-10 lg:mt-0 lg:mx-10 '>
-            <img data-aos="flip-right" data-aos-duration='1000' src={jago} alt="" />
-            <div className='flex flex-row-reverse justify-between'>
-              <div>
-                <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold text-[#453327]'>{accountNumber}</p>
-                <p data-aos="fade-right" data-aos-duration='1000' className='text-[#453327]'>A.n Ajeng Ayu P</p>
-              </div>
-              <button data-aos="fade-left" data-aos-duration='1000' className='bg-[#A3997D] shadow-2xs shadow-amber-800'
-              onClick={handleCopy}
-              >{copied ? "Copied" : "Copy"}</button>
-            </div>
-          </div>
+        <div className='bg-white/30 flex flex-col -mt-20 items-center my-10 mx-10 lg:mx-0 rounded-4xl border-[#B19740] border-2 p-4 text-right'>
+        <div className='flex flex-col items-center justify-center text-center p-4'>
+        <p> <b>Doa restu</b> dari Bp/Ibu/Saudara/i sekalian untuk kelancaran acara adalah satu hal yang tak ternilai. </p>
+          <p>
+            Bagi kami, kebahagiaan sejati adalah berkumpul dan berbagi senyum bersama di hari bahagia kami. Namun, jika ada niatan tulus untuk memberikan tanda kasih sebagai kontribusi dalam perjalanan baru kami, kami berterimakasih dengan hati terbuka dan penuh rasa syukur
+          </p>
+        </div>
+
           
-           <div className='mt-10 lg:mt-0 lg:mx-10'>
-            <img data-aos="flip-right" data-aos-duration='1000' src={jago} alt="" />
-            <div className='flex flex-row-reverse justify-between'>
-              <div>
-                <p data-aos="fade-right" data-aos-duration='1000' className='font-mono font-bold text-[#453327]'>{accountNumber1}</p>
-                <p data-aos="fade-right" data-aos-duration='1000' className='text-[#453327]'>A.n Heri Sukoco</p>
+
+
+
+
+
+<a
+        onClick={() => setIsOpen(true)}
+        className="bg-[#A3997D] text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#8b8068] transition"
+      >
+       <p className='text-white'>
+        Kirim Hadiah
+       </p>
+      </a>
+
+      {/* Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          {/* Overlay */}
+          <div
+            className="absolute inset-0 bg-black/40"
+            onClick={() => setIsOpen(false)}
+          ></div>
+
+          {/* Konten Modal */}
+          <div className="relative bg-white/95 rounded-lg shadow-lg p-6 z-10 w-96 m-4">
+            {/* Tombol Close */}
+            <a
+              onClick={() => setIsOpen(false)}
+              className="absolute top-2 right-2 w-[30px] h-[30px] flex items-center justify-center text-center rounded-full bg-black/30 text-white hover:text-gray-800"
+            >
+              <p className='text-white'>
+              ✕
+              </p>
+            </a>
+
+            {/* Rekening Pertama */}
+            <div className="mt-4 lg:mt-0 lg:mx-2">
+              <img
+                data-aos="flip-right"
+                data-aos-duration="1000"
+                src={jago}
+                alt="Bank Jago"
+                className="w-full mx-auto"
+              />
+              <div className="flex flex-row-reverse justify-between mt-2">
+                <div>
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    className="font-mono font-bold text-[#453327]"
+                  >
+                    {accountNumber}
+                  </p>
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    className="text-[#453327]"
+                  >
+                    A.n Ajeng Ayu P
+                  </p>
+                </div>
+                <a
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  className="bg-[#A3997D] justify-center flex items-center px-3 py-1 text-white rounded shadow-sm shadow-amber-800"
+                  onClick={handleCopy}
+                >
+                  <p className='text-white '>
+                  {copied ? "Copied" : "Copy"}
+                  </p>
+
+                </a>
               </div>
-              <button data-aos="fade-left" data-aos-duration='1000' className='bg-[#A3997D] shadow-2xs shadow-amber-800'
-              onClick={handleCopy1}
-              >{copied1 ? "Copied" : "Copy"}</button>
+            </div>
+
+            {/* Rekening Kedua */}
+            <div className="mt-6 lg:mt-0 lg:mx-2">
+              <img
+                data-aos="flip-right"
+                data-aos-duration="1000"
+                src={jago}
+                alt="Bank Jago"
+                className="w-full mx-auto"
+              />
+              <div className="flex flex-row-reverse justify-between mt-2">
+                <div>
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    className="font-mono font-bold text-[#453327]"
+                  >
+                    {accountNumber1}
+                  </p>
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    className="text-[#453327]"
+                  >
+                    A.n Heri Sukoco
+                  </p>
+                </div>
+                <a
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  className="bg-[#A3997D] px-3 py-1 justify-center flex items-center text-white rounded shadow-sm shadow-amber-800"
+                  onClick={handleCopy1}
+                >
+                  <p className='text-white'>
+                  {copied1 ? "Copied" : "Copy"}
+                  </p>
+
+                </a>
+              </div>
             </div>
           </div>
+        </div>
+      )}
+
+
+
+
+
+
+
+
+
+
+
+
         </div>  
       </div>
 
