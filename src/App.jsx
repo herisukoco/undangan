@@ -160,7 +160,7 @@ useEffect(() => {
           Ajeng & Heri
         </p>
         <div className='flex flex-col'>
-          <img data-aos="zoom-in" data-aos-duration="1000" src={cover} loading='lazy' alt="cover" className='lg:w-[400px]'/>
+          <img data-aos="zoom-in" data-aos-duration="1000" src={cover} loading='eager' alt="cover" className='lg:w-[400px]'/>
         </div>
         <p className='text-[12px] lora text-[#453327]'
           data-aos='fade-left'
@@ -425,42 +425,42 @@ useEffect(() => {
         className=' mt-2 text-[35px] caveat text-[#453327] goyang'>Our Moment</p>
         <div className='flex flex-col w-full mt-10 space-y-2'>
           <div className='w-full flex flex-col'>
-            <img data-aos="zoom-in" data-aos-duration="1000" src={galeri14} loading='lazy' alt="galeri 14" className='goyang1 -mt-[70px] object-cover w-full z-1 translate-y-[34%]'/>
+            <img data-aos="zoom-in" data-aos-duration="1000" src={galeri14} loading='eager' alt="galeri 14" className='goyang1 -mt-[70px] object-cover w-full z-1 translate-y-[34%]'/>
           </div>
           <div className='w-full flex flex-col'>
             <img data-aos="fade-up" data-aos-duration="1000"
-            src={galeri1} loading='lazy' alt="galeri 1" className='object-cover w-full'/>
+            src={galeri1} loading='eager' alt="galeri 1" className='object-cover w-full'/>
           </div>
           <div className='flex flex-row w-full'>
             <img data-aos="fade-right" data-aos-duration="1000"
-            src={galeri2} loading='lazy' alt="galeri 2" className='pr-1 w-1/2 object-cover' />
+            src={galeri2} loading='eager' alt="galeri 2" className='pr-1 w-1/2 object-cover' />
             <img data-aos="fade-left" data-aos-duration="1000"
-            src={galeri7} loading='lazy' alt="galeri 7" className='pl-1 w-1/2 object-cover'/>
+            src={galeri7} loading='eager' alt="galeri 7" className='pl-1 w-1/2 object-cover'/>
           </div>
           <div className='flex flex-row w-full'>
             <div className='flex flex-col w-1/2 mr-1 space-y-2'>
               <img data-aos="fade-right" data-aos-duration="1000"
-              src={galeri9} loading='lazy' alt="galeri 9"  className='h-[200px]  lg:h-[700px] w-full object-cover'/>
+              src={galeri9} loading='eager' alt="galeri 9"  className='h-[200px]  lg:h-[700px] w-full object-cover'/>
               <img data-aos="fade-right" data-aos-duration="1000"
-              src={galeri5} loading='lazy' alt="galeri 5" className='h-[100px] lg:h-[300px] w-full object-cover' />
+              src={galeri5} loading='eager' alt="galeri 5" className='h-[100px] lg:h-[300px] w-full object-cover' />
             </div>
             <div className='flex flex-col w-1/2 ml-1 space-y-2'>
               <img data-aos="fade-left" data-aos-duration="1000"
-              src={galeri3} loading='lazy' alt="galeri 3" className='h-[100px] lg:h-[300px] w-full object-cover'/>
+              src={galeri3} loading='eager' alt="galeri 3" className='h-[100px] lg:h-[300px] w-full object-cover'/>
               <img data-aos="fade-left" data-aos-duration="1000"
-              src={galeri6} loading='lazy' alt="galeri 6" className='h-[200px] lg:h-[700px] w-full object-cover' />
+              src={galeri6} loading='eager' alt="galeri 6" className='h-[200px] lg:h-[700px] w-full object-cover' />
             </div>
           </div>
           <div className='flex flex-row w-full relative'>
-            <img data-aos="fade-right" data-aos-duration="1000" src={galeri4} loading='lazy'  alt="galeri 4" className='pr-1 w-1/2 object-cover'/>
-            <img data-aos="fade-left" data-aos-duration="1000" src={galeri8} loading='lazy'  alt="galeri 8" className='pl-1 w-1/2 object-cover'/>
+            <img data-aos="fade-right" data-aos-duration="1000" src={galeri4} loading='eager'  alt="galeri 4" className='pr-1 w-1/2 object-cover'/>
+            <img data-aos="fade-left" data-aos-duration="1000" src={galeri8} loading='eager'  alt="galeri 8" className='pl-1 w-1/2 object-cover'/>
           </div>
           <div className='flex flex-col w-full'>
-            <img data-aos="fade-up" data-aos-duration="1000" src={galeri10} loading='lazy' alt="galeri 10" className='w-full object-cover' />
+            <img data-aos="fade-up" data-aos-duration="1000" src={galeri10} loading='eager' alt="galeri 10" className='w-full object-cover' />
           </div>
           <div className='flex flex-row w-full'>
-            <img data-aos="fade-right" data-aos-duration="1000" src={galeri12} loading='lazy' alt="galeri 12" className='pr-1 w-1/2 object-cover' />
-            <img data-aos="fade-left" data-aos-duration="1000" src={galeri11} loading='lazy' alt="galeri 11" className='pl-1 w-1/2 object-cover'/>
+            <img data-aos="fade-right" data-aos-duration="1000" src={galeri12} loading='eager' alt="galeri 12" className='pr-1 w-1/2 object-cover' />
+            <img data-aos="fade-left" data-aos-duration="1000" src={galeri11} loading='eager' alt="galeri 11" className='pl-1 w-1/2 object-cover'/>
           </div>
         </div>
       </div>
