@@ -4,7 +4,7 @@ import background from './assets/bg.webp'
 import background1 from './assets/bg1.gif'
 import bg2 from './assets/bg2.jpg'
 import bg3 from './assets/bg3.jpg'
-// import cover from './assets/cover.png'
+import cover from './assets/cover.png'
 import line from './assets/line.png'
 import line2 from './assets/line1.png'
 import tangankanan from './assets/tangankanan.png'
@@ -16,21 +16,21 @@ import groom from './assets/groom.jpg'
 import bunga1 from './assets/bunga1.png'
 import bunga2 from './assets/bunga2.png'
 import bunga3 from './assets/bunga3.png'
-// import galeri1 from './assets/galeri1.jpg'
-// import galeri2 from './assets/galeri2.jpg'
-// import galeri3 from './assets/galeri3.jpg'
-// import galeri4 from './assets/galeri4.jpg'
-// import galeri5 from './assets/galeri5.jpg'
-// import galeri6 from './assets/galeri6.jpg'
-// import galeri7 from './assets/galeri7.jpg'
-// import galeri8 from './assets/galeri8.jpg'
-// import galeri9 from './assets/galeri9.jpg'
-// import galeri10 from './assets/galeri10.jpg'
-// import galeri11 from './assets/galeri11.jpg'
-// import galeri12 from './assets/galeri12.jpg'
-// import galeri13 from './assets/galeri13.png'
-// import galeri14 from './assets/galeri14.png'
-// import galeri15 from './assets/galeri15.png' https://s6.imgcdn.dev/YI2PGy.png
+import galeri1 from './assets/galeri1.webp'
+import galeri2 from './assets/galeri2.webp'
+import galeri3 from './assets/galeri3.webp'
+import galeri4 from './assets/galeri4.webp'
+import galeri5 from './assets/galeri5.webp'
+import galeri6 from './assets/galeri6.webp'
+import galeri7 from './assets/galeri7.webp'
+import galeri8 from './assets/galeri8.webp'
+import galeri9 from './assets/galeri9.webp'
+import galeri10 from './assets/galeri10.webp'
+import galeri11 from './assets/galeri11.jpg'
+import galeri12 from './assets/galeri12.jpg'
+import galeri13 from './assets/galeri13.png'
+import galeri14 from './assets/galeri14.png'
+import galeri15 from './assets/galeri15.png' 
 import jago from './assets/jago.png'
 import daun from './assets/daun.png'
 import daun1 from './assets/daun1.png'
@@ -160,7 +160,7 @@ useEffect(() => {
           Ajeng & Heri
         </p>
         <div className='flex flex-col'>
-          <img data-aos="zoom-in" data-aos-duration="1000" src="https://s6.imgcdn.dev/YIxF20.png" loading='lazy' alt="cover" className='lg:w-[400px]'/>
+          <img data-aos="zoom-in" data-aos-duration="1000" src={cover} loading='lazy' alt="cover" className='lg:w-[400px]'/>
         </div>
         <p className='text-[12px] lora text-[#453327]'
           data-aos='fade-left'
@@ -425,42 +425,42 @@ useEffect(() => {
         className=' mt-2 text-[35px] caveat text-[#453327] goyang'>Our Moment</p>
         <div className='flex flex-col w-full mt-10 space-y-2'>
           <div className='w-full flex flex-col'>
-            <img data-aos="zoom-in" data-aos-duration="1000" src="https://s6.imgcdn.dev/YI2KN9.png" loading='lazy' alt="galeri 14" className='goyang1 -mt-[70px] object-cover w-full z-1 translate-y-[34%]'/>
+            <img data-aos="zoom-in" data-aos-duration="1000" src={galeri14} loading='lazy' alt="galeri 14" className='goyang1 -mt-[70px] object-cover w-full z-1 translate-y-[34%]'/>
           </div>
           <div className='w-full flex flex-col'>
             <img data-aos="fade-up" data-aos-duration="1000"
-            src="https://s6.imgcdn.dev/YIxgId.jpg" loading='lazy' alt="galeri 1" className='object-cover w-full'/>
+            src={galeri1} loading='lazy' alt="galeri 1" className='object-cover w-full'/>
           </div>
           <div className='flex flex-row w-full'>
             <img data-aos="fade-right" data-aos-duration="1000"
-            src="https://s6.imgcdn.dev/YIxplK.jpg" loading='lazy' alt="galeri 2" className='pr-1 w-1/2 object-cover' />
+            src={galeri2} loading='lazy' alt="galeri 2" className='pr-1 w-1/2 object-cover' />
             <img data-aos="fade-left" data-aos-duration="1000"
-            src="https://s6.imgcdn.dev/YI24bB.jpg" loading='lazy' alt="galeri 7" className='pl-1 w-1/2 object-cover'/>
+            src={galeri7} loading='lazy' alt="galeri 7" className='pl-1 w-1/2 object-cover'/>
           </div>
           <div className='flex flex-row w-full'>
             <div className='flex flex-col w-1/2 mr-1 space-y-2'>
               <img data-aos="fade-right" data-aos-duration="1000"
-              src="https://s6.imgcdn.dev/YI2NlL.jpg" loading='lazy' alt="galeri 9"  className='h-[200px]  lg:h-[700px] w-full object-cover'/>
+              src={galeri9} loading='lazy' alt="galeri 9"  className='h-[200px]  lg:h-[700px] w-full object-cover'/>
               <img data-aos="fade-right" data-aos-duration="1000"
-              src="https://s6.imgcdn.dev/YI2cNN.jpg" loading='lazy' alt="galeri 5" className='h-[100px] lg:h-[300px] w-full object-cover' />
+              src={galeri5} loading='lazy' alt="galeri 5" className='h-[100px] lg:h-[300px] w-full object-cover' />
             </div>
             <div className='flex flex-col w-1/2 ml-1 space-y-2'>
               <img data-aos="fade-left" data-aos-duration="1000"
-              src="https://s6.imgcdn.dev/YI2YpO.jpg" loading='lazy' alt="galeri 3" className='h-[100px] lg:h-[300px] w-full object-cover'/>
+              src={galeri3} loading='lazy' alt="galeri 3" className='h-[100px] lg:h-[300px] w-full object-cover'/>
               <img data-aos="fade-left" data-aos-duration="1000"
-              src="https://s6.imgcdn.dev/YI2uBq.jpg" loading='lazy' alt="galeri 6" className='h-[200px] lg:h-[700px] w-full object-cover' />
+              src={galeri6} loading='lazy' alt="galeri 6" className='h-[200px] lg:h-[700px] w-full object-cover' />
             </div>
           </div>
           <div className='flex flex-row w-full relative'>
-            <img data-aos="fade-right" data-aos-duration="1000" src="https://s6.imgcdn.dev/YI26Xv.jpg" loading='lazy'  alt="galeri 4" className='pr-1 w-1/2 object-cover'/>
-            <img data-aos="fade-left" data-aos-duration="1000" src="https://s6.imgcdn.dev/YI2IMu.jpg" loading='lazy'  alt="galeri 8" className='pl-1 w-1/2 object-cover'/>
+            <img data-aos="fade-right" data-aos-duration="1000" src={galeri4} loading='lazy'  alt="galeri 4" className='pr-1 w-1/2 object-cover'/>
+            <img data-aos="fade-left" data-aos-duration="1000" src={galeri8} loading='lazy'  alt="galeri 8" className='pl-1 w-1/2 object-cover'/>
           </div>
           <div className='flex flex-col w-full'>
-            <img data-aos="fade-up" data-aos-duration="1000" src="https://s6.imgcdn.dev/YI2Qfa.jpg" loading='lazy' alt="galeri 10" className='w-full object-cover' />
+            <img data-aos="fade-up" data-aos-duration="1000" src={galeri10} loading='lazy' alt="galeri 10" className='w-full object-cover' />
           </div>
           <div className='flex flex-row w-full'>
-            <img data-aos="fade-right" data-aos-duration="1000" src="https://s6.imgcdn.dev/YI2sAT.jpg" loading='lazy' alt="galeri 12" className='pr-1 w-1/2 object-cover' />
-            <img data-aos="fade-left" data-aos-duration="1000" src="https://s6.imgcdn.dev/YI2nyt.jpg" loading='lazy' alt="galeri 11" className='pl-1 w-1/2 object-cover'/>
+            <img data-aos="fade-right" data-aos-duration="1000" src={galeri12} loading='lazy' alt="galeri 12" className='pr-1 w-1/2 object-cover' />
+            <img data-aos="fade-left" data-aos-duration="1000" src={galeri11} loading='lazy' alt="galeri 11" className='pl-1 w-1/2 object-cover'/>
           </div>
         </div>
       </div>
@@ -470,7 +470,7 @@ useEffect(() => {
             <p data-aos="fade-down" data-aos-duration='3000'
             className='mt-2 text-[35px] caveat text-[#453327] text-shadow-amber-900/10 text-shadow-lg'>Love Story</p>
             <img data-aos="fade-right" data-aos-duration='3000'
-            src="https://s6.imgcdn.dev/YI2ygD.png" alt="galeri13" className='goyang-rotate object-cover z-1 -mt-[10%] translate-y-[10%]' />
+            src={galeri13} alt="galeri13" className='goyang-rotate object-cover z-1 -mt-[10%] translate-y-[10%]' />
             <div className='w-full flex flex-col min-h-screen z-2 bg-[#FCF6E6] rounded-4xl border-[#B19740] border-2 items-center justify-start text-center text-[#453327]'>
               <img data-aos="zoom-out" data-aos-duration='3000'
               src={daun2} alt="" className='zoominout z-3 scale-150 -translate-y-[50%]'/>
@@ -498,7 +498,7 @@ useEffect(() => {
         </div>
         <div className='bg-white/30 flex flex-col -mt-20 items-center my-10 mx-10 lg:mx-0 rounded-4xl border-[#B19740] border-2 p-4 text-right'>
         <div className='flex flex-col items-center justify-center text-center p-4 text-[#453327] bodoni'>
-        <p> <b>Doa restu</b> dari Bp/Ibu/Saudara/i sekalian untuk kelancaran acara adalah satu hal yang tak ternilai. </p>
+        <p> <b>Doa restu</b> Anda sekalian untuk kelancaran acara adalah satu hal yang tak ternilai. </p>
           <p>
             Bagi kami, kebahagiaan sejati adalah berkumpul dan berbagi senyum bersama di hari bahagia kami. Namun, jika ada niatan tulus untuk memberikan tanda kasih sebagai kontribusi dalam perjalanan baru kami, kami berterimakasih dengan hati terbuka dan penuh rasa syukur
           </p>
